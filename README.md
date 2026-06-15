@@ -1,264 +1,222 @@
-💡 Sobre o Projeto
+🐍 Python Norte 2026 — Laboratório de Debugging em Python
 
-Este repositório reúne exercícios práticos de debugging em Python desenvolvidos para a Python Norte 2026. Cada arquivo .py contém um código propositalmente quebrado, com erros de sintaxe, lógica e estrutura que o participante deve identificar e corrigir.
+Aprenda a pensar como um desenvolvedor: encontre, compreenda e corrija erros reais em Python.
 
-Os exercícios são progressivos: começam com erros simples de sintaxe (Fácil) e avançam para bugs em interfaces gráficas com Tkinter (Médio/Difícil).
+---
 
-Cada problema possui um PDF de apoio explicando o contexto, o comportamento esperado e dicas para guiar o raciocínio.
+📌 Sobre o Projeto
 
+Este repositório reúne desafios práticos de depuração em Python desenvolvidos para a Comunidade Python Norte 2026.
 
-📁 Estrutura do Repositório
+Cada exercício apresenta um código propositalmente quebrado, contendo erros de sintaxe, lógica e estrutura que os participantes devem identificar e corrigir.
 
-PythonNorte-2026/
-│
-├── Problema 1 - Facil.py               # Exercício 1 — Fácil
-├── Problema 1 - Facil.pdf              # Enunciado e guia do Problema 1
-│
-├── Problema 2 - Medio.py               # Exercício 2 — Médio
-├── Problema 2 - Medio.pdf              # Enunciado e guia do Problema 2
-│
-├── Problema 3 - Medio.py               # Exercício 3 — Médio
-├── Problema 3 - Medio.pdf              # Enunciado e guia do Problema 3
-│
-├── Problema 4 - Dificil.py             # Exercício 4 — Difícil
-├── Problema 4 - Dificil.pdf            # Enunciado e guia do Problema 4
-│
-├── Desafio Extra - Splash Screen.py    # Desafio bônus — Splash Screen
-├── Desafio Extra - Splash Screen.pdf   # Enunciado do Desafio Extra
-│
-├── pyn2026.png                         # Logo do evento
-└── README.md                           # Este arquivo
+Os desafios são progressivos: começam com erros básicos de sintaxe e avançam para problemas mais complexos envolvendo interfaces gráficas com Tkinter.
 
+Cada problema é acompanhado por um guia visual em PDF, contendo o contexto do exercício, o comportamento esperado e dicas para auxiliar no processo de investigação.
 
-⚙️ Pré-requisitos e Instalação
+Mais do que corrigir erros, o objetivo é desenvolver o raciocínio necessário para compreender como o código funciona e como solucionar problemas de forma estruturada.
 
-1. Python 3.8 ou superior
+---
 
-Verifique se o Python já está instalado:
+🎓 Objetivos de Aprendizagem
 
-bashpython --version
-# ou
-python3 --version
+Ao concluir os desafios, os participantes serão capazes de:
 
-Caso não esteja instalado, baixe em: https://www.python.org/downloads/
+• Interpretar mensagens de erro em Python
 
+• Identificar problemas de sintaxe, lógica e estrutura
 
-⚠️ Windows: Durante a instalação, marque a opção "Add Python to PATH".
+• Aplicar técnicas de depuração de forma sistemática
 
+• Compreender o fluxo de execução de programas
 
+• Desenvolver interfaces gráficas básicas com Tkinter
 
+• Praticar conceitos de programação orientada a objetos
 
-2. Tkinter
+---
 
-O Tkinter é a biblioteca de interface gráfica usada nos problemas 3, 4 e no Desafio Extra. Ela já vem incluída por padrão na instalação do Python no Windows e macOS.
+🧠 Metodologia
 
-No Linux (Ubuntu/Debian), instale separadamente:
+Cada exercício foi desenvolvido com base em cenários reais de depuração.
 
-bashsudo apt update
-sudo apt install python3-tk
+O participante recebe um código com falhas intencionais e um guia visual em PDF contendo contexto, comportamento esperado e dicas progressivas.
 
-Confirme que o Tkinter está funcionando:
+A proposta incentiva a investigação, o pensamento crítico e a resolução de problemas sem fornecer a solução imediatamente.
 
-bashpython -m tkinter
+---
 
-Uma janela de teste deve aparecer. Se aparecer, está tudo certo.
+✨ Diferenciais
 
+• Exercícios progressivos do nível iniciante ao avançado
 
-3. Clonar o Repositório
+• Guias visuais em PDF para apoiar o aprendizado
 
-bashgit clone https://github.com/Hugo20006/PythonNorte-2026.git
+• Desafios baseados em erros comuns encontrados no desenvolvimento de software
+
+• Experiência prática e interativa
+
+• Conteúdo 100% em Python
+
+• Nenhuma dependência externa obrigatória para os exercícios principais
+
+---
+
+👥 Público-Alvo
+
+• Estudantes iniciantes em programação
+
+• Participantes com conhecimentos básicos em Python
+
+• Desenvolvedores que desejam aprimorar habilidades de depuração
+
+• Entusiastas de tecnologia interessados em interfaces gráficas
+
+---
+
+⏱️ Duração Estimada
+
+• Problema 1 — 10 minutos
+
+• Problema 2 — 15 minutos
+
+• Problema 3 — 25 minutos
+
+• Problema 4 — 35 minutos
+
+• Desafio Extra — 20 minutos
+
+Tempo total estimado: 1 hora e 45 minutos.
+
+---
+
+📂 Estrutura do Repositório
+
+Cada desafio possui dois arquivos:
+
+• Problema N - Nivel.py — Código Python com os erros propostos
+
+• Problema N - Nivel.pdf — Guia visual com dicas e orientações para a correção
+
+---
+
+🗂️ Exercícios
+
+🟢 Fácil
+
+1. Problema 1 - Facil.py
+
+Função de boas-vindas com erros de sintaxe e chamada de função.
+
+🟡 Médio
+
+2. Problema 2 - Medio.py
+
+Tabuada com erros de lógica, variáveis e estrutura.
+
+3. Problema 3 - Medio.py
+
+Calculadora gráfica em Tkinter com múltiplos bugs.
+
+🔴 Difícil
+
+4. Problema 4 - Dificil.py
+
+Jogo da Velha com interface gráfica, placar persistente e inteligência artificial simples.
+
+⭐ Desafio Extra
+
+Desafio Extra - Splash Screen.py
+
+Criação de uma tela de apresentação em Tkinter do zero.
+
+---
+
+🧰 Tecnologias Utilizadas
+
+• Python 3.8+
+
+• Tkinter — Interfaces gráficas
+
+• tkinter.messagebox — Caixas de diálogo
+
+• tkinter.font — Personalização de fontes
+
+• random — Lógica da IA do computador
+
+---
+
+▶️ Como Executar
+
+1. Clone o repositório:
+
+git clone https://github.com/Hugo20006/PythonNorte-2026.git
+
+2. Acesse a pasta do projeto:
+
 cd PythonNorte-2026
 
-Ou baixe o ZIP diretamente pela página do GitHub clicando em Code → Download ZIP.
+3. Execute qualquer exercício:
 
+python "Problema 1 - Facil.py"
 
-4. Dependências externas
+Observação: Os problemas 3, 4 e o desafio extra utilizam Tkinter. Em geral, a biblioteca já acompanha a instalação padrão do Python.
 
-Todos os exercícios utilizam apenas bibliotecas nativas do Python — não é necessário instalar nada via pip. As bibliotecas utilizadas (tkinter, random, time) já vêm com o Python.
+---
 
+📖 Como Usar os Guias PDF
 
-▶️ Como Usar
+Cada arquivo PDF acompanha seu respectivo arquivo Python e apresenta:
 
-Cada arquivo .py é independente. Abra o problema que deseja resolver no seu editor favorito (VS Code, PyCharm, IDLE) e execute:
+• O contexto do problema
 
-bashpython "Problema 1 - Facil.py"
+• O comportamento esperado
 
+• Dicas para identificar os erros
 
-Leia o PDF correspondente antes de começar — ele explica o que o código deveria fazer e oferece dicas de onde procurar os erros.
+• Conceitos envolvidos no exercício
 
+O objetivo é incentivar a investigação e o raciocínio lógico durante o processo de depuração.
 
+---
 
-A missão é simples: fazer o código funcionar corretamente sem alterar a lógica original, apenas corrigindo os bugs existentes.
+🌎 Conexão com a Comunidade
 
+Este projeto foi criado para fortalecer a cultura de compartilhamento de conhecimento, incentivar o aprendizado colaborativo e ampliar o acesso ao ecossistema Python na região Norte.
 
-🧩 Os Problemas
+---
 
+🎯 O que você vai praticar
 
-Problema 1 · Fácil · Função de Boas-Vindas
+• Interpretação de mensagens de erro
 
-Arquivo: Problema 1 - Facil.py
+• Depuração de código Python
 
-Guia: Problema 1 - Facil.pdf
+• Funções e estruturas de repetição
 
-O que o código deveria fazer
+• Conversão de tipos
 
-Definir uma função chamada inicio que imprime uma mensagem de boas-vindas ao evento, e chamá-la em seguida.
+• Tratamento de exceções
 
-Bibliotecas usadas
+• Interfaces gráficas com Tkinter
 
-Nenhuma — Python puro.
+• Programação orientada a objetos
 
-Conceitos envolvidos
+• Raciocínio lógico e análise de bugs
 
+---
 
-Definição de funções com def
-Chamada de função
-Uso de print()
+👨‍💻 Autor
 
-
-Erros presentes no código
-
-O código possui 3 erros principais de sintaxe e estrutura que impedem sua execução. Leia o PDF para as dicas.
-
-
-Problema 2 · Médio · Tabuada
-
-Arquivo: Problema 2 - Medio.py
-
-Guia: Problema 2 - Medio.pdf
-
-O que o código deveria fazer
-
-Pedir ao usuário um número via terminal, e exibir a tabuada completa desse número (de 1 a 10).
-
-Exemplo de saída esperada para o número 7:
-
-7 x 1 = 7
-7 x 2 = 14
-...
-7 x 10 = 70
-
-Bibliotecas usadas
-
-Nenhuma — Python puro.
-
-Conceitos envolvidos
-
-
-input() para leitura do usuário
-Conversão de tipo com int()
-Laço for com range()
-F-strings
-
-
-Erros presentes no código
-
-Há 3 erros no código: uma atribuição incompleta, um dois-pontos faltando e uma variável com nome incorreto. Leia o PDF para as dicas.
-
-
-Problema 3 · Médio · Calculadora com Tkinter
-
-Arquivo: Problema 3 - Medio.py
-
-Guia: Problema 3 - Medio.pdf
-
-O que o código deveria fazer
-
-Exibir uma calculadora com interface gráfica (janela) que aceita dois números e realiza 5 operações: adição, subtração, multiplicação, divisão e potência. Possui tratamento para divisão por zero e exibe o resultado na própria janela.
-
-Bibliotecas usadas
-
-BibliotecaTipoFunção no códigotkinter (módulo tk)Nativa do PythonCriação de toda a interface gráfica: janela, botões, campos de texto, labelstkinter.font (módulo tkfont)Nativa do PythonImportada no cabeçalho (disponível para uso com fontes customizadas)
-
-Conceitos envolvidos
-
-
-Interface gráfica com tk.Tk(), tk.Frame, tk.Label, tk.Entry, tk.Button
-Layout com .pack() e .grid()
-Funções matemáticas separadas por responsabilidade
-Tratamento de exceção com try/except ValueError
-Verificação de divisão por zero
-F-strings e formatação condicional de resultado
-
-
-Erros presentes no código
-
-O código tem mais de 10 erros espalhados: funções sem def, parâmetros ausentes, variáveis sem nome, return faltando, condições if sem a palavra-chave, strings de operação incorretas e uma variável de resultado não atribuída. É um exercício de atenção aos detalhes. Leia o PDF para as dicas.
-
-
-Problema 4 · Difícil · Jogo da Velha com IA
-
-Arquivo: Problema 4 - Dificil.py
-
-Guia: Problema 4 - Dificil.pdf
-
-O que o código deveria fazer
-
-Exibir um Jogo da Velha (Tic-Tac-Toe) completo com:
-
-
-Interface gráfica em dark theme (#121212)
-Placar persistente (Você vs PC)
-O jogador usa O, o computador usa X
-O computador faz jogadas aleatórias entre as casas livres
-Destaque visual das casas vencedoras
-Botão para reiniciar a partida sem zerar o placar
-
-
-Bibliotecas usadas
-
-BibliotecaTipoFunção no códigotkinter (módulo tk)Nativa do PythonInterface gráfica completa: janela, grade de botões, placar, status, botão de resettkinter.messageboxNativa do PythonCaixas de diálogo popup ao fim de cada partida (vitória, derrota, empate)randomNativa do PythonEscolha aleatória da jogada do computador entre as posições livres do tabuleiro
-
-Conceitos envolvidos
-
-
-Programação Orientada a Objetos (POO): classe JogoDaVelha com __init__ e métodos
-self para acessar atributos da instância
-lambda em callbacks de botão
-.after() do Tkinter para atraso simulado ("PC pensando...")
-List comprehension para encontrar casas livres
-Verificação de combinações vencedoras com tuplas
-Gerenciamento de estado do jogo (jogo_ativo, tabuleiro)
-
-
-Erros presentes no código
-
-O código tem erros críticos: self ausente no __init__, geometry() chamado sem o objeto, string com aspas não fechadas, random não importado, grade com 8 botões ao invés de 9, lógica de jogada do computador invertida (condição if not livres deveria ser if livres), e uma mensagem de vitória do jogador trocada ("Você perdeu!" ao invés de "Você ganhou!"). Leia o PDF para as dicas.
-
-
-Desafio Extra · Splash Screen
-
-Arquivo: Desafio Extra - Splash Screen.py
-
-Guia: Desafio Extra - Splash Screen.pdf
-
-O que o código deveria fazer
-
-Criar uma tela de apresentação (splash screen) em Tkinter que exibe o logo ou nome do evento por alguns segundos antes de abrir a janela principal da aplicação.
-
-Bibliotecas usadas (previstas)
-
-BibliotecaTipoFunção esperadatkinterNativa do PythonJanela da splash screen (sem barra de título, centralizada)time ou after()Nativa do PythonTemporização para fechar a splash após alguns segundosPIL / Pillow (opcional)Externa (pip install Pillow)Exibir imagem/logo na splash screen
-
-
-O arquivo está em branco — este é um desafio criativo: o participante deve implementar a splash screen do zero seguindo as instruções do PDF.
-
-
-
-
-📚 Bibliotecas Utilizadas
-
-Resumo geral de todas as bibliotecas presentes nos exercícios:
-
-BibliotecaTipoOnde é usadaO que faztkinterNativa — já vem com PythonProblemas 3, 4 e Desafio ExtraCria janelas, botões, campos, labels e toda a interface gráficatkinter.messageboxNativa — submódulo do tkinterProblema 4Exibe caixas de diálogo (popups) de resultadotkinter.fontNativa — submódulo do tkinterProblema 3Controle avançado de fontes na interfacerandomNativa — já vem com PythonProblema 4Geração de escolha aleatória para a jogada do computador
-
-Nenhuma instalação via pip é necessária para os problemas principais.
-
-
-👤 Autor
-
-Desenvolvido por Hugo Leal para a Python Norte 2026.
-
+Desenvolvido por Hugo Leal para a Comunidade Python Norte 2026.
 
 GitHub: @Hugo20006
-Projeto pessoal: hugoo.dev
+
+Portfólio: hugoo.dev
+
+---
+
+⭐ Gostou do projeto?
+
+Deixe uma estrela no repositório — isso ajuda o conteúdo a alcançar mais pessoas que estão aprendendo Python e desenvolvendo habilidades de depuração. 🚀
+
