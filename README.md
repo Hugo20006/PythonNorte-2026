@@ -103,26 +103,23 @@ Cada desafio possui dois arquivos:
 🗂️ Exercícios
 
 🟢 Fácil
-
 1. Problema 1 - Facil.py
-
 Função de boas-vindas com erros de sintaxe e chamada de função.
 
 🟡 Médio
-
 2. Problema 2 - Medio.py
-
 Tabuada com erros de lógica, variáveis e estrutura.
 
 3. Problema 3 - Medio.py
-
 Calculadora gráfica em Tkinter com múltiplos bugs.
 
 🔴 Difícil
-
 4. Problema 4 - Dificil.py
-
 Jogo da Velha com interface gráfica, placar persistente e inteligência artificial simples.
+
+🟠Difícil/Avançado
+5. Problema 5 – Difícil.py 
+Depuração de uma aplicação gráfica desenvolvida com Tkinter, explorando conceitos como gerenciamento de perguntas, controle de pontuação, atualização dinâmica da interface, eventos, callbacks e feedback ao usuário.
 
 ⭐ Desafio Extra
 
