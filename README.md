@@ -84,6 +84,9 @@ A proposta incentiva a investigação, o pensamento crítico e a resolução de 
 
 • Problema 4 — 35 minutos
 
+• Problema 5 — 40 minutos
+
+
 • Desafio Extra — 20 minutos
 
 Tempo total estimado: 1 hora e 45 minutos.
