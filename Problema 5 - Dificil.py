@@ -28,7 +28,6 @@ class QuizCopa:
         self.pontuacao = 0
         self.respondida = True
 
-        
         self.perguntas = 
             {
                 "nivel": "Fácil",
@@ -41,7 +40,7 @@ class QuizCopa:
                 "pergunta": "Quantas vezes o Brasil venceu a Copa do Mundo?",
                 "opcoes": ["3", "4", "5", "6"],
                 "correta": 2
-            }
+            },
             {
                 "nivel": "Médio",
                 "pergunta": "Quem é o maior artilheiro da história das Copas?",
@@ -65,33 +64,32 @@ class QuizCopa:
                 "pergunta": "Em qual Copa do Mundo Pelé marcou seu primeiro gol, com apenas 17 anos?",
                 "opcoes": ["1954", "1958", "1962", "1966"],
                 "correta": 1
-            
+            }
         ]
 
-        self.criar_interface(
-        self.carregar_pergunta()
+        .criar_interface()
+        self.carregar_pergunta
 
     # ── Interface ────────────────────────────────────────────
-    def criar_interfaceself:
-
+    def criar_interface(self):
         frame_header = tk.Frame(self.root, bg=BG_HEADER)
         frame_header.pack(fill="x")
 
-        tk.(
+        tk.Label(
             frame_header,
-            text="⚽  QUIZ DA COPA",
+            text="⚽   QUIZ DA COPA",
             font=("Arial", 18, "bold"),
             bg=BG_HEADER, fg=AMARELO,
             pady=14
-        ).packside="left", padx=20
+        ).pack(side="left", padx=20)
 
-        self.labelplacar = tk.Label(
+        self.label_placar = tk.(
             frame_header,
             text="🏆 0 / 0",
             font=("Arial", 12, "bold"),
             bg=BG_HEADER, fg=TEXT_PRIM
         )
-        self.label_placar.pack(side="right", padx=20)
+        self.label_placar.pack(side="left", padx=20)
 
         self.canvas_prog = tk.Canvas(
             self.root, height=6,
@@ -100,17 +98,16 @@ class QuizCopa:
         self.canvas_prog.pack(fill="x")
 
         frame_info = tk.Frame(self.root, bg=BG_PRINCIPAL)
-        _info.pack(fill="x", padx=20, pady=(10, 4))
+        frame_info.pack(fill="x", padx=20, pady=(10, 4))
 
-        self.label_nivel = tk.Label(
-            ,
+        self.label_nivel = tk.Label(frame_info,
             text="● Fácil",
             font=("Arial", 10, "bold"),
             bg=BG_PRINCIPAL, fg=VERDE
         )
-        self.label_nivel.pack(side="left")
+        self.label_nivel.pack("left")
 
-        self.label = tk.Label(
+        self.label_progresso = tk.Label(
             frame_info,
             text=f"Pergunta 1 / {len(self.perguntas)}",
             font=("Arial", 10),
@@ -119,7 +116,7 @@ class QuizCopa:
         self.label_progresso.pack(side="right")
 
         frame_card = tk.Frame(
-            self.root, bg=BG_CARD,
+            bg=BG_CARD,
             highlightbackground=ROXO,
             highlightthickness=2
         )
@@ -150,10 +147,10 @@ class QuizCopa:
                 anchor="w",
                 padx=16,
                 cursor="hand2",
-                command= i=i: self.responder(i)
+                lambda i=i: self.responder(i)
             )
-            btn.pack(fill="x", padx=20, pady=4, ipady=9)
-            btn.bind("<Enter>", lambda e, b=btn: b.config(bg=ROXO_HOVER))
+            btn.pack(fill="x", padx=20, pady=4, ipady)
+            btn.bind("<Enter>", lambda e, b=btn: b.config(bg=ROXO_HOVER) if b["state"] == "normal" else None)
             btn.bind("<Leave>", lambda e, b=btn: b.config(bg=ROXO) if b["state"] == "normal" else None)
             self.botoes.append(btn)
 
@@ -179,7 +176,7 @@ class QuizCopa:
         self.btn_proxima.pack(pady=8, ipadx=20, ipady=8)
 
     # ── Barra de progresso ──
-    def _atualizar_barra(self)
+    def atualizar_barra(self):
         self.canvas_prog.update_idletasks()
         w = self.canvas_prog.winfo_width() or 460
         self.canvas_prog.delete("all")
@@ -188,7 +185,7 @@ class QuizCopa:
 
     # ── Lógica ──
     def carregar_pergunta(self):
-        self.respondida = 
+        self.respondida = False
 
         for btn in self.botoes:
             btn.config(bg=ROXO, fg=TEXT_PRIM, state="normal")
@@ -196,7 +193,7 @@ class QuizCopa:
         self.label_feedback.config(text="")
         self.btn_proxima.config(state="disabled", bg="#555", fg=TEXT_SEC)
 
-        pergunta_atual = self.perguntas[self.]
+        pergunta_atual = self.perguntas[self.indice]
 
         nivel = pergunta_atual["nivel"]
         self.label_nivel.config(
@@ -208,7 +205,7 @@ class QuizCopa:
             text=f"Pergunta {self.indice + 1} / {len(self.perguntas)}"
         )
 
-        self.label_pergunta.config(text=pergunta_atual"pergunta")
+        self.label_pergunta.config(text=pergunta_atual["pergunta"])
 
         self.label_placar.config(
             text=f"🏆 {self.pontuacao} / {len(self.perguntas)}"
@@ -216,22 +213,21 @@ class QuizCopa:
 
         letras = ["A", "B", "C", "D"]
         for i, btn in enumerate(self.botoes):
-            btn.config(text=f"  {letras[i]})  {pergunta_atual['opcoes'][i]}")
+            btn.config(text=f"  {letras[i]})  {pergunta_atual['opcao'][i]}")
 
-        self.root.(50, self.__barra)
+        self.root.after(50, self.atualizar_barra)
 
     def responder(self, escolha):
-        if self.respondida:
-            return
+        if self.respondida: return
+        self.respondida = True
 
-        
         pergunta_atual = self.perguntas[self.indice]
-        errado = pergunta_atual["correta"]
+        correta = pergunta_atual["correta"]
 
         for btn in self.botoes:
             btn.config(state="disabled")
 
-        if escolhido == correta:
+        if escolhido = correta
             self.botoes[escolha].config(bg=VERDE, fg=TEXT_PRIM)
             self.label_feedback.config(text="✅  Correto!", fg=VERDE)
             self.pontuacao += 1
@@ -244,16 +240,16 @@ class QuizCopa:
             text=f"🏆 {self.pontuacao} / {len(self.perguntas)}"
         )
 
-        if self.indice len(self.perguntas) - 
-            self.btn_proxima.config(text="Próxima  →", state="normal", bg=AMARELO, fg="#1a1a2e")
-        else:
+        if self.indice >= len(self.perguntas)
             self.btn_proxima.config(text="Ver Resultado  →", state="normal", bg=AMARELO, fg="#1a1a2e")
+        else:
+            self.btn_proxima.config(text="Próxima  →", state="normal", bg=AMARELO, fg="#1a1a2e")
 
     def proxima_pergunta(self):
-        self.indice += 1
-        if self.indice >= len(self.perguntas):
+        if self.indice >= len(self.perguntas) - 1:
             self.mostrar_resultado()
         else:
+            self.indice += 1
             self.carregar_pergunta()
 
     def mostrar_resultado(self):
@@ -271,9 +267,9 @@ class QuizCopa:
             "Resultado Final",
             f"{emoji}  {msg}\n\nAcertou {self.pontuacao} de {total} perguntas."
         )
-        self.()
+        self.reiniciar()
 
-    def reiniciar(self):
+    def 
         self.indice = 0
         self.pontuacao = 0
         self.respondida = False
@@ -281,7 +277,6 @@ class QuizCopa:
         self.carregar_pergunta()
 
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     root = tk.Tk()
-    app = QuizCopa(root
-    
+    app =
