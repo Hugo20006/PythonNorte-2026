@@ -121,7 +121,7 @@ Calculadora gráfica em Tkinter com múltiplos bugs.
 Jogo da Velha com interface gráfica, placar persistente e inteligência artificial simples.
 
 🟠Difícil/Avançado
-5. Problema 5 – Difícil.py 
+5. Problema 5 - Difícil.py 
 Depuração de uma aplicação gráfica desenvolvida com Tkinter, explorando conceitos como gerenciamento de perguntas, controle de pontuação, atualização dinâmica da interface, eventos, callbacks e feedback ao usuário.
 
 ⭐ Desafio Extra
