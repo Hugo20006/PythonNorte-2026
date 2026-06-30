@@ -76,9 +76,9 @@ A proposta incentiva a investigação, o pensamento crítico e a resolução de 
 
 ⏱️ Duração Estimada
 
-• Problema 1 — 10 minutos
+• Problema 1 — 5 minutos
 
-• Problema 2 — 15 minutos
+• Problema 2 — 10 minutos
 
 • Problema 3 — 25 minutos
 
